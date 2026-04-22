@@ -54,12 +54,17 @@ Vous avez vu dans cette séquence comment créer des secrets GiHUB afin de mettr
 Vous pouvez observez les différentes couches OSI sur votre site **{site}.pythonanywhere.com/osi**  
   
 **Exercice 1 : Définissez les termes suivants (Répondre directement dans GitHub)**    
-* Un protocole,  
-* Une entité protocolaire,
-* Un service,  
-* Une primitive de service,  
-* Une Service Data Unit (SDU) par rapport à une PDU  
-* Un point d'accès à un service SAP (Service Access Point)  
+* Un protocole: est un langage commun d'échanges entre les équipements.
+   
+* Une entité protocolaire: est un module logiciel actif dans un système réseau, qui implémente les règles d'un protocole donné.
+  
+* Un service: est l'ensemble des fonctionnalités qu'un niveau du modèle OSI met à disposition du niveau supérieur via une interface définie. Et est caractérisé par son mode (connexion ou non) et sa qualité (fiable ou non).
+
+* Une primitive de service: est une intéraction entre deux niveaux adjacents du modèle OSI, formalisée en quatre type. Request (le niveau supérieur demande quelque chose), Indication (le niveau inférieu signale un évènement), Response (le niveau supérieur répond à cet évènement) et Confirm (le niveau inférieur confirme que la demande est traitée).
+   
+* Une Service Data Unit (SDU) par rapport à une PDU  : SDU est le bloc de donnée qu'un niveau reçoit du niveau supérieur et doit transmettre sans le modifier. Le niveau va encapsuler cette SDU en ajoutant un en-tête propre à son protocole appelé PCI( Protocol Control Information). Le résultat de cette combinaison devient une PDU, c'est ce qui est réellement transmis sur le réseau.
+  
+* Un point d'accès à un service SAP (Service Access Point)  : est un point d'accès identifié de manière unique , qui permet à un niveau supérieur d'utiliser les services du niveau inférieur. C'est ce qui permet de distinguer plusieurs communications simultanées sur un même système.
 
 ---------------------------------------------------
 🗺️ Séquence 5 : Retour sur le protocole DHCP
